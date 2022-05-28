@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= "Check Exchanges"
+  p For access to the first Exercise, use /one
+  form(method="get" action="/one")
+    input(type="submit", value="Go To /one")
+  p For access to the second Exercise, use /two
+  form(method="get" action="/two")
+    input(type="submit", value="Go To /two")
+  p For access to the third Exercise, use /three
+  form(method="get" action="/three")
+    input(type="submit", value="Go To /three")

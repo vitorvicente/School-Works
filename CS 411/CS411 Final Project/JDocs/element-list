@@ -1,0 +1,17 @@
+edu.bu.cs411
+edu.bu.cs411.Config
+edu.bu.cs411.Courses
+edu.bu.cs411.Courses.Util
+edu.bu.cs411.Data
+edu.bu.cs411.Data.Transformers
+edu.bu.cs411.Registrar
+edu.bu.cs411.UI
+edu.bu.cs411.UI.Actions
+edu.bu.cs411.UI.Actions.Actual
+edu.bu.cs411.UI.Actions.Navigation
+edu.bu.cs411.UI.Screens
+edu.bu.cs411.UI.Screens.Admin
+edu.bu.cs411.UI.Screens.Common
+edu.bu.cs411.Users
+edu.bu.cs411.Users.Util
+edu.bu.cs411.Util

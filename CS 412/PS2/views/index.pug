@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  if title
+    h1= title
+  else
+    h1= "PS2"
+
+  if string
+    if length
+      p String: #{string} - Length: #{length}
+    else
+      p String: #{string}
+  else
+    p Default String

@@ -1,0 +1,23 @@
+{
+  "general": {
+    "title": "PS5 FrontEnd"
+  },
+  "app": {
+    "headerText": "CS 411 - Spring '21 - Problem Set 5"
+  },
+  "services": {
+    "requestEndpoint": "http://localhost:3000/ps5/exchangeRequest"
+  },
+  "requestFormBase": {
+    "defaultBaseCurrency": "USD",
+    "defaultRequestedCurrency": "EUR",
+    "defaultResponse": "",
+    "currencyList": ["USD", "EUR", "GBP", "RUB", "NZD", "MXN", "KRW", "JPY", "INR", "HKD", "CHF", "CAD", "BRL",
+      "AUD", "SGD"]
+  },
+  "requestFormComponent": {
+    "baseCurrencyTitle": "Base Currency",
+    "requestedCurrencyTitle": "Requested Currency",
+    "buttonText": "Convert!"
+  }
+}

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    p Base Currency: #{requestedCurrency}
+    p Requested Currency: #{wantedCurrency}
+    p Coversion Rates: #{conversionRate}
+    form(method="get" action="/")
+        input(type="submit", value="Go Back")

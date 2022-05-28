@@ -1,0 +1,50 @@
+# 3b
+
+; State 0 - Even number of 1’s
+0 0 _ r 0
+0 1 _ r 1
+0 _ _ * halt-reject
+
+; State 1 - Odd number of 1’s
+1 0 _ r 1
+1 1 _ r 0
+1 _ _ * halt-accept
+
+
+
+# 3c
+
+; State q0
+0 x x r 0
+0 1 1 r 0
+0 0 x r 1
+0 _ _ r halt-accept
+
+; State q1
+1 x x r 1
+1 0 0 r 1
+1 1 x r 2
+1 _ _ r halt-reject
+
+; State q2
+2 1 1 l 2
+2 x x l 2
+2 0 x r 5
+2 _ _ r 3
+
+; State q3
+3 1 1 r 3
+3 x x r 3
+3 0 x l 5
+3 _ _ r 4
+
+; State q4
+4 1 _ l 4
+4 x _ l 4
+4 _ _ r halt-accept
+
+; State q5
+5 x x l 5
+5 1 1 l 5
+5 0 0 l 5
+5 _ _ r 1

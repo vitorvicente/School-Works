@@ -1,0 +1,33 @@
+<div class="container" style="width: 1000px; align-content: center; padding-top: 5rem;">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="baseCurrency">{{baseCurrencyTitle}}</label>
+        <select [(ngModel)]="model.baseCurrency" class="form-control" id="baseCurrency" required>
+          <option *ngFor="let cur of currencies" [value]="cur">{{cur}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col" style="text-align: right">
+      <div class="form-group">
+        <label for="expectedCurrency">{{requestedCurrencyTitle}}</label>
+        <select [(ngModel)]="model.expectedCurrency" class="form-control" id="expectedCurrency" required
+                style="text-align: right">
+          <option *ngFor="let cur of currencies" [value]="cur">{{cur}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="display:flex; justify-content: center; padding-top: 5rem; padding-bottom: 5rem;">
+    <button class="btn btn-primary btn-lg" style="padding-top: 1.5rem; padding-bottom: 1.5rem; width: 50%;"
+            (click)="onSubmit()">
+      {{buttonText}}
+    </button>
+  </div>
+
+  <div *ngIf="model.response" class="row" style="display:flex; text-align: center; padding-top: 5rem;
+  padding-bottom:5rem;">
+    <h1>{{model.response}}</h1>
+  </div>
+</div>

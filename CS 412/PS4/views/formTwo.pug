@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= "Check Exchanges #3"
+    form(action="/ps4/getCurrencyThree" method="post")
+        p Base Currency:
+            input(type="text" name="base" placeholder="")
+        p Requested Currency:
+            input(type="text" name="requested" placeholder="")
+        input(type="submit", value="Submit Three")
+    form(method="get" action="/")
+        input(type="submit", value="Go Back")
